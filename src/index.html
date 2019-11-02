@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+    <title>buddhilive-select</title>
+
+    <script type="module" src="/build/chiyogami.esm.js"></script>
+    <script nomodule src="/build/chiyogami.js"></script>
+
+</head>
+
+<body>
+
+    <buddhilive-select blname="countries" bltitle='Select a Country'></buddhilive-select>
+
+</body>
+
+<script>
+    var selects = document.querySelector('buddhilive-select');
+
+    window.onload = function() {
+        var arrayOptions = [
+            ['Sri Lanka', 'LK'],
+            ['India', 'IN'],
+            ['Pakistan', 'PK'],
+            ['Bangladesh', 'BD'],
+            ['Nepal', 'NP'],
+            ['Bhutan', 'BT'],
+            ['Afghanistan', 'AF'],
+            ['Maldives', 'MV']
+        ]
+        selects.setOptions(arrayOptions);
+    }
+</script>
+
+</html>
